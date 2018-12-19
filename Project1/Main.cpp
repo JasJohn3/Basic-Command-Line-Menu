@@ -13,40 +13,26 @@ int main() {
 
 	cout << "Please Enter your selection: " << flush;
 
-	int user_Input;
-	cin >> user_Input;
+	int user_input;
+	cin >> user_input;
 	cout << endl;
-	
-	if (user_Input == 1)
+	switch (user_input)
 	{
-		cout << "Menu Option 1"<<endl<<endl;
+	case 1:
+		cout << "Menu Option 1" << endl << endl;
 		main();
-	}
-	else if (user_Input == 2)
-	{
-		cout << "Menu Option 2" << endl << endl;
+	case 2:
+		cout << "Menu Option 1" << endl << endl;
 		main();
-	}
-	else if (user_Input == 3)
-	{
-		cout << "Menu Option 3" << endl << endl;
+	case 3:
+		cout << "Menu Option 1" << endl << endl;
 		main();
-	}
-	else if (user_Input == 4)
-	{
-		cout << "Menu Option 4" << endl << endl;
+	case 4:
+		cout << "Menu Option 1" << endl << endl;
 		main();
-	}
-	else if (user_Input == 5)
-	{
-		cout << "Thank you!"<< endl;
-		system("pause");
-		return 0;
-	}
-	else
-	{
-		cout << "Invalid Option.  Please enter a valid option." << endl<<endl;
-		main();
+	default:
+		cout << "Invalid Selection.  Returning to Main Menu." << endl;
+		break;
 	}
 
 	return 0;
